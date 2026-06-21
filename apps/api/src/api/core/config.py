@@ -34,6 +34,9 @@ class Settings(BaseSettings):
     # API
     api_v1_prefix: str = "/api/v1"
 
+    # Database
+    database_url: str = "postgresql+psycopg://postgres:postgres@localhost:5432/lumen"
+
     # CORS — list of allowed origins (use ["*"] only for local development)
     cors_origins: list[str] = ["*"]
 
